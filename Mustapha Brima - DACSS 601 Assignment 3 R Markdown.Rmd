@@ -1,0 +1,50 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+#The data found in the covid-responses.tab.xlsx file was a result of the 
+#findings of how Italian peoples responded to the first few days living 
+#in the COVID-19 Pandemic. The data displays the different opinions and 
+#preferences of Italian citizens as they began to go about their regular 
+#day-to day practices while being in quarantine and not being able to 
+#venture outside of their homes. The Italian government had conducted 
+#this study in an effort to make quarantine more suitable while having 
+#its citizens follow public health guidelines as they pertained to the 
+#pandemic as they would "...need interventions that make staying following 
+#public health protocols more desirable" 
+#(https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/1SBQCX). 
+#The only values that seem to be missing in the data are names and emails 
+#of each participant which were most likely kept confidential. As for 
+#other aspects, the 'finish' variable only shows either ones or nothing at all, 
+#while the 'UserLanguage' variable doesn't properly display the language that 
+#each participant speaks. 
+#I have attempted to rewrite the data for the finish and UserLanguage variables 
+#so that one variable indicates whether they completed the survey or not 
+#('finish') by returning TRUE instead of '1' and FALSE instead of 'NA'. While 
+#the other veriable (UserLanguage), I have made to more adequately display the 
+#language spoken by each participant of the survey as 'IT' would be for Italian and 
+# 'EN' would be for English.
